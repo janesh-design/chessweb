@@ -1,0 +1,280 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 430vh;
+  width: 100%;
+  border: 1px solid #696969;
+  background-image: linear-gradient(#2f4f4f ,#696969,#a9a9a9,#c0c0c0,#d3d3d3,#dcdcdc,#fff,#dcdcdc,#d3d3d3,#c0c0c0,#a9a9a9,#696969);
+  }
+  .long{
+    height: 420vh;
+    width: 88%;
+    box-shadow: 5px 5px 20px #333333 ,-5px -5px 10px #696969;
+    margin-left:6% ;
+    margin-top: 5vh;
+  }
+  .common{
+    width: 100%;
+  }
+
+  .first{
+    height: 100vh;
+    position: sticky;
+    background:linear-gradient(to right ,#262626,#333333,#404040,#4d4d4d);
+    padding-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+  }
+  .first .img
+  {
+    position: relative;
+    margin-left: 30%;
+    top: -200px;
+    height: 300px;
+    width: 400px;
+    background-image: url("../img/chess.jpg");
+    background-size: 400px 300px;
+    transform: skew(10deg, 30deg) rotate(340deg);
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px #4d4d4d , -5px -5px 15px #333333;
+    animation-name: janesh;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+  }
+  
+  @keyframes janesh{
+    0%{
+    transform: skew(5deg, 10deg) rotate(340deg) scale(-0) translate(-20px,-30px);
+    }
+    50%{
+    transform: skew(10deg, 20deg) rotate(640deg) scale(0.5) rotate3d(120deg) ;
+    }
+    100%{
+    transform: skew(20deg, 30deg) rotate(1020deg) scale(1) translate(20px,30px);
+
+    }
+  }
+  .first h4{
+    /* margin-left: 48%; */
+    margin-top: -12px;
+    color: #d3d3d3;
+  }
+
+  .first h1{
+    color: #d3d3d3;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-top: -430px;
+    font-size: 50px;
+    font-family: monospace;
+  }
+  .first p{
+    color: #dcdcdc;
+    letter-spacing: 10px;
+    text-transform: uppercase;padding-top: 15px;
+  }
+  button{
+    background: rgb(255, 48, 48);
+    border: none;
+    color: #c0c0c0;
+    margin-top: 15px;
+    width:100px;
+    height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    font-weight: 600;
+  }
+  button:hover{
+    background: rgb(255, 25, 25);
+  }
+  .lineleft{
+    height: 400px;
+    width: 255px;
+    border-left:2px solid #c0c0c0;
+    border-top:2px solid #c0c0c0;
+    margin-left: 15%;
+    margin-top: 100px;
+  }
+  .lineright{
+    height: 400px;
+    width: 255px;
+    border-top:2px solid #c0c0c0;
+    border-right:2px solid #c0c0c0;
+    margin-left: 64%;
+    margin-top: -108px;
+  }
+  #zero{
+     width: 0;
+     z-index: -10000;
+     border-color: #262626;
+  }
+  .head{
+    width: 35%;
+    border: 1px solid #404040;
+    margin-left: 5%;
+  }
+  .buttom{
+    width: 35%;
+    border: 1px solid #404040;
+    margin-left: 60%; 
+    margin-top: -20px; 
+  }
+  .first_1{
+    margin-top: 50px;
+    margin-left: 5%;
+    width: 40%;
+    border-color: #a9a9a9;
+    border: 1px solid #a9a9a9;
+  }
+  .last_1{
+    position: absolute;
+    top: 50px;
+    margin-left: 55%;  
+    border: 1px solid #a9a9a9;
+    width: 40%;
+    border-color: #a9a9a9;
+  }
+
+  .white{
+    background: #fff;
+background-image: url("../img/chess1.jpg");
+background-size: 100% 120vh;
+height: 120vh;
+  }
+
+  .top1{
+height: 60vh;
+padding-top: 170px;
+text-align: center;
+  }
+  .top1 h6{
+    margin-top: -38px;
+    font-family:monospace;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .top1 h1{
+    font-family:monospace;
+    font-size: 35px;
+    margin-top: -5px;
+    color: #4d4d4d;
+    text-transform: uppercase;
+  }
+
+  .down1{
+    height: 60vh;
+  }
+
+  .black{
+    background: #262626;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .par{
+    text-align: center;
+    height: 100px;
+    width: 500px;
+    margin-left: 30%;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 30px;
+  }
+  .king{
+    border: 1px solid #696969;
+    box-shadow:inset 5px 5px 10px #262626 ,inset -5px -5px 10px #262626;
+    flex: auto;
+    display: flex;
+    transition: 0.5s;
+  }
+  .king:hover{
+    background: #404040;
+    transition: 0.5s;
+  }
+  .row{
+    display: flex;
+    height: 50vh;
+    width: 100%;
+  }
+  .side{
+width: 40%;
+height: 50vh;
+  }
+
+  .by{
+height: 50vh;
+width: 60%;
+overflow: hidden;
+  }
+
+.king .by h6{
+padding-top: 40px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-transform: uppercase;
+padding-bottom: 5px;
+color: #dcdcdc;
+}
+
+.king .by h1{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-transform: uppercase;
+padding-bottom: 10px;
+color: #dcdcdc;
+}
+.king .by p{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: #dcdcdc;
+font-size: small;
+padding-bottom: 40px;
+}
+.king .by h5{
+color: rgb(255, 48, 48);
+text-transform: uppercase;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.chessboard{
+  height: 100vh;
+  width: 100%;
+  background: #dcdcdc;
+  display: flex;
+}
+
+.east{
+height: 80vh;
+margin-top: 10vh;
+margin-bottom: 10vh;
+width: 40%;
+margin-left: 5%;
+margin-right: 5%;
+text-align: center;
+}
+
+.east h6{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+  padding-top: 50px;
+}
+.east h1{
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #262626;
+  font-size: xx-large;
+}
+.east p{
+  color: #4d4d4d;
+  padding-top:30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.west{
+height: 100vh;
+width: 50%;
+}
